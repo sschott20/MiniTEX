@@ -1,0 +1,5 @@
+cat /home/accts/sas342/.ssh/id_rsa_cs323.pub | ssh sas342@node.zoo.cs.yale.edu "cat >> /home/accts/sas342/.ssh/authorized_keys"
+ssh -i /home/accts/sas342/.ssh/id_rsa_cs323 sas342@node.zoo.cs.yale.edu
+
+scp '<sas342>@node.zoo.cs.yale.edu:~/.ssh/id_rsa' C:\Users\sebal\.ssh\
+ssh -i C:\Users\sebal\.ssh\id_rsa sas342@node.zoo.cs.yale.edu
